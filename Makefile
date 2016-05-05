@@ -18,7 +18,9 @@ PYTHON2           ?= python2
 DFU_UTIL          ?= dfu-util
 CLOAD             ?= 1
 DEBUG             ?= 0
-CLOAD_SCRIPT      ?= ../crazyflie-clients-python/bin/cfloader
+#needed to change CLOAD_SCRIPT since python client is not in the same
+#directory as this firmware folder
+CLOAD_SCRIPT      ?= ../../projects/crazyflie-clients-python/bin/cfloader
 PLATFORM					?= CF2
 
 ######### Stabilizer configuration ##########
