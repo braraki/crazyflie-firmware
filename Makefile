@@ -139,6 +139,7 @@ PROJ_OBJ_CF2 += led_f405.o mpu6500.o i2cdev_f405.o ws2812_cf2.o lps25h.o
 PROJ_OBJ_CF2 += ak8963.o eeprom.o maxsonar.o piezo.o
 PROJ_OBJ_CF2 += uart_syslink.o swd.o uart1.o uart2.o watchdog.o
 PROJ_OBJ_CF2 += cppm.o
+PROJ_OBJ_CF2 += wheel_driver.o
 # USB Files
 PROJ_OBJ_CF2 += usb_bsp.o usblink.o usbd_desc.o usb.o
 
@@ -146,7 +147,6 @@ PROJ_OBJ_CF2 += usb_bsp.o usblink.o usbd_desc.o usb.o
 PROJ_OBJ += crtp.o ledseq.o freeRTOSdebug.o buzzer.o
 PROJ_OBJ_CF1 += imu_cf1.o pm_f103.o nrf24link.o ow_none.o uart.o
 PROJ_OBJ_CF2 += imu_cf2.o pm_f405.o syslink.o radiolink.o ow_syslink.o proximity.o usec_time.o
-
 # libdw
 PROJ_OBJ_CF2 += libdw1000.o libdw1000Spi.o
 
@@ -173,6 +173,7 @@ PROJ_OBJ_CF2 += deck_analog.o
 PROJ_OBJ_CF2 += deck_spi.o
 
 # Decks
+PROJ_OBJ_CF2 += wheels.o
 PROJ_OBJ_CF2 += bigquad.o
 PROJ_OBJ_CF2 += ledring12.o
 PROJ_OBJ_CF2 += buzzdeck.o
