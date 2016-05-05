@@ -26,16 +26,6 @@ sudo apt-get update
 sudo apt-get install libnewlib-arm-none-eabi
 ```
 
-#### Arch Linux
-
-```bash
-sudo pacman -S community/arm-none-eabi-gcc community/arm-none-eabi-gdb community/arm-none-eabi-newlib
-```
-
-#### Windows
-
-> `TODO: Please share!`
-
 ### Cloning
 
 This repository uses git submodules. Clone with the --recursive flag
@@ -54,22 +44,9 @@ git submodule update
 
 ## Compiling
 
-### Crazyflie 1.0
-
-Build with:
-```bash
-make PLATFORM=CF1
-```
-
-or with the toolbelt
-
-```bash
-tb build PLATFORM=CF1
-```
-
 ### Crazyflie 2.0
 
-This is the dafault build so just running "make" is enough or:
+This is the default build so just running "make" is enough or:
 ```bash
 make PLATFORM=CF2
 ```
@@ -78,6 +55,11 @@ or with the toolbelt
 
 ```bash
 tb build
+```
+
+To upload onto the crazyflie, start the crazyflie in bootloader mode and type
+```bash
+make cload
 ```
 
 ### config.mk
