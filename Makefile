@@ -20,7 +20,7 @@ CLOAD             ?= 1
 DEBUG             ?= 0
 #needed to change CLOAD_SCRIPT since python client is not in the same
 #directory as this firmware folder
-CLOAD_SCRIPT      ?= ../../projects/crazyflie-clients-python/bin/cfloader
+CLOAD_SCRIPT      ?= ../crazyflie-clients-python/bin/cfloader
 PLATFORM					?= CF2
 
 ######### Stabilizer configuration ##########
